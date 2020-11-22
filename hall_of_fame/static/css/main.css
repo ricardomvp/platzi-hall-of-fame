@@ -1,0 +1,164 @@
+body{
+  background: gray;
+  color: white;
+  font-family: helvetica;
+}
+.background{
+  width: 100%;
+}
+.content{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+hr{
+  height: 4px;
+  background: white;
+  border: none;
+}
+
+/* NAVBAR */
+.navbar{
+  background-color: pink;
+  display: inline-flex;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+}
+.navbar h1{
+  margin: 0;
+  width: 75%;
+  margin-right: auto;
+}
+.navbar img{
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+/* NAVBAR */
+/* BODY */
+body a{
+  text-decoration: none;
+  color:pink;
+}
+/* FAMOUS */
+.famous-container{
+  /* border: 5px solid red; */
+}
+.famous-container-hero{
+  /* border: 5px solid blue; */
+  width: 100%;
+  display: inline-flex;
+  margin-bottom: 10px;
+}
+.famous-container-hero-left{
+  /* border: 5px solid cyan; */
+  border-bottom: 2px solid white;
+}
+.famous-container-hero-right{
+  /* border: 5px solid gray; */
+  width: 100%;
+  height: 100%;
+}
+.famous-container-hero-up{
+  /* border: 5px solid green; */
+  height: 25px;
+}
+.famous-container-hero-down{
+  /* border: 5px solid pink; */
+  height: 50%;
+}
+.hero{
+  border: 2px solid white;
+  border-radius: 70px;
+  width: 120px;
+  height: 120px;
+}
+.hero img{
+    width: inherit;
+    border-radius: inherit;
+}
+.github-logo-container{
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  margin-left: 20px;
+}
+.github-logo-container img{
+  width: 100%;
+}
+.hero-name{
+  font-size: 20px;
+}
+.hero-github-link{
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+.hero-github-link a{
+  margin-bottom: 10px;
+}
+.famous-container-box{
+  border: 2px solid white;
+  border-left: none;
+  height: auto;
+}
+.famous-container-info{
+  /* border: 5px solid cyan; */
+  display: inline-flex;
+  width: 100%;
+  height: auto;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.famous-container-info-left{
+  /* border: 5px solid green; */
+  width: 80%;
+  height: 100%;
+}
+.famous-container-info-left p{
+  font-style: italic;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.famous-container-info-right{
+  /* border: 5px solid blue; */
+  width: auto;
+  height: 100%;
+  text-align: center;
+}
+.famous-container-info-right-repositories{
+  font-size: 20px;
+}
+.famous-container-info-right-repositories-number{
+  font-size: 50px;
+}
+.famous-container-repo{
+  border: 5px solid cyan;
+  height: 50px;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+/* FAMOUS */
+/* BODY */
+/* FOOTER */
+footer{
+  position: absolute;
+  width: inherit;
+  border-radius: 5px;
+  text-align: center;
+  bottom: 0;
+  display: contents;
+}
+.footer-bottom-row h4{
+  margin: 0;
+}
+
+.footer-bottom-row img{
+  height: 30px;
+  width: 30px;
+  margin: 2px;
+}
+
+/* FOOTER */

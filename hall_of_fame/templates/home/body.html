@@ -1,0 +1,32 @@
+{% load static %}
+<div class="body">
+  <div class="welcome">
+    <h2>
+      Welcome to "Platzi hall of fame" made to complete the <a href="https://github.com/ricardomvp/platzi-hall-of-fame">24hrs challenge</a>,
+      If you want to be part of the hall only have to type your GitHub usename below 👇🏽.
+      And that's all you are welcome!
+    </h2>
+  </div>
+  <hr>
+  <div class="new-famous">
+    <h3>New famous</h3>
+    <form method="POST">
+      {% csrf_token %}
+        <p>
+          <label>GitHub</label>
+          <input type = "text"
+                 name = "username"
+                 placeholder= "@Username" />
+          <button class="btn-submit" type="submit">Add me!</button>
+        </p>
+    </form>
+  </div>
+  <hr>
+  <div class="hall-of-fame">
+    {% for user in users %}
+      {% block famous %}
+        {%include 'home/famous.html'%}
+      {% endblock %}
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,63 @@
+{% load static %}
+<div class="famous">
+  <div class="famous-container">
+    <div class="famous-container-hero">
+
+      <div class="famous-container-hero-left">
+        <div class="hero">
+          <img src="{{user.avatar_url}}" alt="hero">
+        </div>
+      </div>
+
+      <div class="famous-container-hero-right">
+        <div class="famous-container-hero-up">
+        </div>
+        <div class="famous-container-hero-down">
+
+          <span class="hero-name"><strong>{{user.name}}, {{user.location}}.</strong></span>
+          <div class="github-logo-container">
+            <img src="{% static 'images/github-footer.png'%}" alt="hero">
+            <span class="hero-github-link"><a href="{{user.html_url}}">/{{user.login}}</a></span>
+          </div>
+
+          <div class="famous-container-box">
+            <div class="famous-container-info">
+              <div class="famous-container-info-left">
+                <p>"{{user.bio}}"</p>
+                followers: {{user.followers}}
+                following: {{user.following}}<br>
+                {% if user.company %}
+                  company: {{user.company}}<br>
+                {% endif %}
+                {% if user.blog %}
+                  url: <a href="{{user.blog}}">{{user.blog}}</a><br>
+                {% endif %}
+                {% if user.twitter_username %}
+                  tw: <a href="https://twitter.com/{{user.twitter_username}}">{{user.twitter_username}}</a><br>
+                {% endif %}
+              </div>
+              <div class="famous-container-info-right">
+                <span class="famous-container-info-right-repositories">Public repos:</span><br>
+                <span class="famous-container-info-right-repositories-number">{{user.public_repos}}</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+      {% for repo in user.repos %}
+      <div class="famous-container-repo">
+      {% if repo.fork %}
+        *
+      {% endif %}
+        <a href="{{repo.html_url}}">{{repo.name}}</a>
+        {% if repo.description %}
+        : {{repo.description}}
+        {% endif %}
+        <br>
+      </div>
+      {% endfor %}
+  </div>
+</div>

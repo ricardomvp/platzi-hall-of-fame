@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Platzi | Hall of fame</title>
+    <link rel="stylesheet"type="text/css" href="{% static 'css/main.css' %}">
+  </head>
+  <body>
+
+    <div class="background">
+      <div class="content">
+        <nav>
+          {% block navbar %}
+            {% include 'home/navbar.html' %}
+          {% endblock %}
+        </nav>
+
+        <main>
+          {% block body %}
+            {% include 'home/body.html' %}
+          {% endblock %}
+        </main>
+
+        {% block footer %}
+          {% include 'home/footer.html' %}
+        {% endblock %}
+      </div>
+    </div>
+
+  </body>
+</html>
