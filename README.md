@@ -26,5 +26,5 @@ I will use the following:
 ## ⚠️ Warning don't try this at home
 
 ## Results
-Challenge completed!!!!!! 🏆🏆🏆
-The app is working [here](https://platzi-hall-of-fame.herokuapp.com/)
+### Challenge completed in <24hrs!!!!!! 🏆🏆🏆
+### The app is working [here](https://platzi-hall-of-fame.herokuapp.com/)
