@@ -1,5 +1,5 @@
 # ✨ platzi-hall-of-fame ✨
-This is a challenge to show I can design, code and deploy a complete project in &lt; 24hrs 
+This is a challenge to show I can design, code and deploy a complete project in &lt; 24hrs
 
 ❗️⌚ **The challenge starts exactly when this README commit will be done.**
 
@@ -13,7 +13,7 @@ This will be a project were platzi students type its Github's name and the app w
 ## Rules
 - It's valid use whichever technology
 - It's valid consult errors and questions with internet, but all code must be type by hand (*not copy/paste*)
-- It's prohibited the use of templetes. 
+- It's prohibited the use of templetes.
 
 ## How to
 I will use the following:
@@ -26,4 +26,5 @@ I will use the following:
 ## ⚠️ Warning don't try this at home
 
 ## Results
-... 
+Challenge completed!!!!!! 🏆🏆🏆
+The app is working [here](https://platzi-hall-of-fame.herokuapp.com/)
